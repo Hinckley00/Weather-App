@@ -80,7 +80,8 @@
     border-radius: 16px;
     width: 90vw;
     min-height: unset;
-    margin: 32px auto 24px auto;
+    margin: 4px auto 16px auto;
+    margin-bottom: 150px;
     /* background: rgba(
       47,
       70,
@@ -89,12 +90,15 @@
     ); subtle transparency for readability */
   }
   .search-bar {
-    flex-direction: column;
+    flex-direction: row;
     gap: 8px;
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   .search-bar input {
-    width: 100%;
+    flex: 1;
+    min-width: 0;
     font-size: 16px;
     height: 40px;
     padding-left: 16px;
@@ -102,6 +106,7 @@
   .search-bar img {
     width: 40px;
     padding: 10px;
+    flex-shrink: 0;
   }
   .weather-icon {
     width: 100px;
